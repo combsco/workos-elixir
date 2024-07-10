@@ -170,4 +170,8 @@ defmodule WorkOS.SSO do
       ]
     )
   end
+
+  def validate_access_token(access_token) do
+    WorkOS.JWTValidator.validate_access_token(access_token)
+  end
 end
