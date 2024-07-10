@@ -72,7 +72,8 @@ defmodule WorkOS.MixProject do
       {:ex_doc, "~> 0.23", only: :dev, runtime: false},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:test, :dev], runtime: false},
-      {:jose, "~> 1.11"}
+      {:jose, "~> 1.11"},
+      {:httpoison, "~> 2.0"}
     ]
   end
 
