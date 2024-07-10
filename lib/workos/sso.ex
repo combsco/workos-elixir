@@ -171,6 +171,7 @@ defmodule WorkOS.SSO do
     )
   end
 
+  @spec validate_access_token(String.t()) :: {:ok, String.t()} | {:error, String.t()}
   def validate_access_token(access_token) do
     WorkOS.JWTValidator.validate_access_token(access_token)
   end
